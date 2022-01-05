@@ -18,3 +18,5 @@
 - Switch Statement and condition
 - Tarnary Operator
 - And or Odd Operator
+
+# \*\* Reduce Repeating Tasks with Loops
