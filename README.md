@@ -12,4 +12,9 @@
 - Math function provide by JavaScript
 - avaScript Comment
 
-# Condition and Logic in JavaScript
+# \*\* Condition and Logic in JavaScript
+
+- Logic and condition in progamming
+- Switch Statement and condition
+- Tarnary Operator
+- And or Odd Operator
