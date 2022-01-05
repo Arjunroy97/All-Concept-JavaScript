@@ -32,3 +32,13 @@
 - For in loop
 - continuing a "for" Loop
 - break a "for" Loop
+
+# \*\* String and It's Uses in Javascript
+
+- What is String
+- tring Literal vs Constructor
+- What is Escope notation
+- How to Compare to String
+- String methods always provided in JavaScript
+- Concate string
+- String build-in Method
