@@ -85,9 +85,9 @@ const findDate = arr.find(val=>val === find)
 
 
 /** how to Reverse Array Element Completed */
-
 for(let i = 0; i < (arr.length /2); i++){
     let tamp = arr[i];
     arr[i] = arr[arr.length -1 -i];
     arr[arr.length -1 -i] = tamp
 }
+console.log(arr)

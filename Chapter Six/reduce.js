@@ -4,6 +4,18 @@ console.clear();
 
 let arr = [1,2,3,4,5,6,7,8,9];
 
+
+// ES6 - 7  Destructuring an array
+let destructureArr = [f,s,t,fo,fi,,,] = arr;
+
+
+
+// rest operator Destructuring an array
+let restDestructure = [a,b,...xs] = arr; 
+
+
+
+
 // for loop and array value sum
 let sum = 0;
 for(let i = 0; i < arr.length;i++){
@@ -164,3 +176,155 @@ let filterArrNameValue = people.filter(item =>{
     return item.name.length < 5;
 })
 // console.log(filterArrNameValue)
+
+//  Filtering value indexof 
+let findIndexofValue = people.filter((list)=>{
+    let inFound = false;
+    Object.values(list).forEach(val=>{
+        if(String(val).indexOf('P') > -1){
+            inFound = true;
+            return;
+        }
+    })
+    if(inFound) return list;
+
+})
+// console.log(findIndexofValue)
+
+
+
+
+
+
+
+/**  Sorting Arrays */
+
+// Default sort
+let valueArr = ['s', 't', 'a', 34, 'K', 'o', 'v', 'E', 'r', '2', '4', 'o', 'W', -1, '-4'];
+
+valueArr.sort()
+
+
+
+// Alphabetical Sor
+let alphabaticalArr = ['s', 't', 'a','K', 'o', 'v', 'E', 'r','o', 'W'];
+let alphabaticalSort = alphabaticalArr.sort((a,b)=> String(a).localeCompare(b));
+
+
+
+
+// String sorting by length (Shorted first)
+let stringArray = ["zebras", "dogs", "elephants", "penguins"];
+let stringShortedFistSort = stringArray.sort((a,b)=>{
+    return a.length - b.length;
+})
+
+
+
+
+// String sorting by length (longest first)
+let stringShortedlongSort = stringArray.sort((a,b)=>{
+    return b.length - a.length;
+})
+
+
+
+
+
+
+// Numerical Sort (ascending)
+let numberArray = [100, 50,150,1000,500,250,10, 10000, 1]
+let ascendingSort = numberArray.sort((a,b)=> a - b)
+
+// Numerical Sort (Descending)
+let descendingSort = numberArray.sort((a,b)=> b - a)
+
+
+
+/** Sorting array by even and odd numbers */
+
+// Sorting array by even numbers
+let mixArray = [10, 21, 4, 15, 7, 99, 0, 12];
+let evenSort = mixArray.sort((a,b)=> {
+    return (a & 1) - (b & 1) || a - b 
+})
+
+
+
+// Sorting array by odd numbers
+let oddSort = mixArray.sort((a,b)=> {
+    return (b & 1) - (a & 1) || b - a
+})
+
+
+
+
+
+
+
+
+/**  Reversing arrays */
+
+arr.reverse();
+
+
+// Custom build array reverse method
+function customReverse(arr){
+    arr.reverse().forEach((item)=>{
+       if(Array.isArray(item)){
+           customReverse(item)
+       } 
+    })
+    return arr;
+}
+
+
+
+
+// Shallow cloning an array
+let arrayToClone = [1, 2, 3, 4, 5];
+let method_1 = Array.from(arrayToClone);
+let method_2 = Array.of(...arrayToClone)
+let method_3 = [...arrayToClone];
+let method_4 = Array.prototype.slice.call(arrayToClone);
+let method_5 = [].slice.call(arrayToClone)
+
+
+
+
+
+/** Merge two array as key value pair */
+let columns = ["Date", "Number", "Size", "Location", "Age"];
+let rows = ["2001", "5", "Big", "Sydney", "25"];
+
+let keyToValuePair = rows.reduce((obj,item,ind)=>{
+    obj[columns[ind]] = item;
+    return obj;
+},{})
+
+
+
+
+
+
+
+/**  Object keys and values to array */
+let object = {
+    key1: 10,
+    key2: 3,
+    key3: 40,
+    key4: 20
+};
+
+let convertArr = [];
+for(let key in object){
+    convertArr.push([key, object[key]])
+}
+
+
+
+
+/**  Sorting multidimensional array */
+convertArr.sort((a,b)=>{
+    return a[1] - b[1]
+})
