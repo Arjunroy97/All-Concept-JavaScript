@@ -1,6 +1,6 @@
 # All-Concept-JavaScript
 
-# \* Start Your Programming Journey
+# \*\* Chapter Two :- Start Your Programming Journey
 
 - Hello world and code staucture
 - What is variable in javaScript
@@ -12,14 +12,14 @@
 - Math function provide by JavaScript
 - avaScript Comment
 
-# \*\* Condition and Logic in JavaScript
+# \*\* Chapter Three :- Condition and Logic in JavaScript
 
 - Logic and condition in progamming
 - Switch Statement and condition
 - Tarnary Operator
 - And or Odd Operator
 
-# \*\* Reduce Repeating Tasks with Loops
+# \*\* Chapter Four :- Reduce Repeating Tasks with Loops
 
 - This is for loop in javaScript
 - while loop
@@ -33,7 +33,7 @@
 - continuing a "for" Loop
 - break a "for" Loop
 
-# \*\* String and It's Uses in Javascript
+# \*\* Chapter Five :- String and It's Uses in Javascript
 
 - What is String
 - tring Literal vs Constructor
